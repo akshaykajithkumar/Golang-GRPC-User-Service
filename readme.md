@@ -59,7 +59,7 @@ go run cmd/server/main.go
 ```
 ## Accessing gRPC Endpoints
 
-You can use any gRPC client to interact with the service. Below are examples using `postman` to interact with the various endpoints.
+You can use any gRPC client to interact with the service. Below are the examples using `postman` to interact with the various endpoints.
 
 ### Fetch User Details by User ID
 
