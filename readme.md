@@ -1,4 +1,4 @@
-# Golang GRPC User Service With Search
+# Golang GRPC User Service 
 
 This project encompasses a Golang gRPC service designed with specialized functionalities to effectively manage user details, alongside a robust search feature.
 
