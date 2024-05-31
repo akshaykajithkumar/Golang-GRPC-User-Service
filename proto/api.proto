@@ -1,0 +1,60 @@
+syntax = "proto3";
+option go_package = "./api";
+
+message UserID {
+    string id = 1;
+}
+
+message UserInfo {
+    string id = 1;
+    string name = 2;
+    string city = 3;
+    int64 phone = 4;
+    float height = 5;
+    MaritalStatus married = 6; 
+}
+
+enum MaritalStatus {
+    UNKNOWN = 0;
+    YES = 1;
+    NO = 2;
+}
+
+service UserService {
+    rpc GetUserDetails(UserRequest) returns (UserResponse);
+    rpc GetUserList(UserListRequest) returns (UserListResponse);
+    rpc FindUsers(FindUserRequest) returns (UserListResponse);
+}
+
+message UserRequest {
+    string id = 1;
+}
+
+message UserListRequest {
+    int32 page_number = 1;
+    int32 page_size = 2;
+    repeated string ids = 3;
+}
+
+message Filter {
+    string id = 1;
+    string name = 2;
+    string city = 3;
+    int64 phone = 4;
+    float height = 5;
+    MaritalStatus married = 6;
+}
+
+message FindUserRequest {
+    int32 page_number = 1;
+    int32 page_size = 2;
+    Filter filters = 3;
+}
+
+message UserResponse {
+    UserInfo user = 1;
+}
+
+message UserListResponse {
+    repeated UserInfo users = 1;
+}
