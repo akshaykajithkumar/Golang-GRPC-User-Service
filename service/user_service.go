@@ -169,6 +169,3 @@ func convertMaritalStatusToProto(maritalStatus string) api.MaritalStatus {
 		return api.MaritalStatus_UNKNOWN
 	}
 }
-
-//
-//
