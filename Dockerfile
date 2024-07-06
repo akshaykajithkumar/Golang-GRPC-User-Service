@@ -22,4 +22,3 @@ EXPOSE 50051
 # Command to run the executable
 CMD ["./server"]
 
-#
