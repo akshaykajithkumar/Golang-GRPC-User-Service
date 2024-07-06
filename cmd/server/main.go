@@ -38,7 +38,7 @@ func main() {
 
 	// Log server address
 	log.Printf("Server listening at %v", listener.Addr())
-	//
+
 	// Serving incoming gRPC requests
 	if err := grpcServer.Serve(listener); err != nil {
 		log.Fatalf("Failed to serve: %v", err)
