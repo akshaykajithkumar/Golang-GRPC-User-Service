@@ -157,7 +157,7 @@ func _UserService_FindUsers_Handler(srv interface{}, ctx context.Context, dec fu
 	}
 	return interceptor(ctx, in, info, handler)
 }
-//
+
 // UserService_ServiceDesc is the grpc.ServiceDesc for UserService service.
 // It's only intended for direct use with grpc.RegisterService,
 // and not to be introspected or modified (even as a copy)

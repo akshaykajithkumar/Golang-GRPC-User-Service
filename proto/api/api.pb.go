@@ -268,7 +268,7 @@ func (x *UserListRequest) Reset() {
 		ms.StoreMessageInfo(mi)
 	}
 }
-//
+
 func (x *UserListRequest) String() string {
 	return protoimpl.X.MessageStringOf(x)
 }
